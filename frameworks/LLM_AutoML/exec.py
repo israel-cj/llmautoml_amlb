@@ -34,7 +34,7 @@ def run(dataset, config):
     log.info("sklearn == %s", sklearn.__version__)
    
         
-    openai.api_key = "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"
+    openai.api_key = ""
     log.info('Running LLM AutoML with a maximum time of %ss', config.max_runtime_seconds)
     
     X_train, y_train = dataset.train.X, dataset.train.y
