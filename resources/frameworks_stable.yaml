@@ -54,6 +54,9 @@ H2OAutoML:
 lightautoml:
   version: 'stable'
 
+LLM-AMLTK:
+  version: "stable"
+
 LLM_AutoML:
   version: "stable"
 

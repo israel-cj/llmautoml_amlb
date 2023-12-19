@@ -49,6 +49,9 @@ hyperoptsklearn:
 lightautoml:
   version: 'latest'
 
+LLM-AMLTK:
+  version: "latest"
+
 LLM_AutoML:
   version: "latest"
 

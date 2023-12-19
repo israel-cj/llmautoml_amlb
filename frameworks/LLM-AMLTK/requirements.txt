@@ -1,0 +1,11 @@
+packaging
+amltk[notebook, smac, optuna, sklearn]
+ipython
+openai 
+openml
+scikit-learn
+ott-jax
+dirty_cat
+gdown
+
+

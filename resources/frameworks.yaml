@@ -126,6 +126,12 @@ lightautoml:
   description: |
     LightAutoML (LAMA) project from Sberbank AI Lab AutoML group is the framework for automatic classification and regression model creation.
 
+LLM-AMLTK:
+  project: https://github.com/israel-cj/LLM-AMLTK.git
+  version: "stable"
+  description: |
+    Using LLM priming to warm-start automated machine learning. The backbone will be the AMLTK: https://github.com/automl/amltk
+
 LLM_AutoML:
   project: https://github.com/israel-cj/LLM_AutoML.git
   version: "stable"
