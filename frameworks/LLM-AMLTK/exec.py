@@ -67,6 +67,8 @@ def run(dataset, config):
         automl.fit(X_train, y_train)
     log.info(f"Finished fit in {training_timer.duration}s.")
 
+    models_count = len(automl.report)
+
     log.info('Predicting on the test set.')
     def infer(data: Union[str, pd.DataFrame]):
         test_data = pd.read_parquet(data) if isinstance(data, str) else data
@@ -98,7 +100,7 @@ def run(dataset, config):
         probabilities=probabilities,
         truth=y_test,
         target_is_encoded=False,
-        models_count=iterations,
+        models_count=models_count,
         training_duration=training_timer.duration,
         predict_duration=predict_timer.duration,
         inference_times=inference_times,
