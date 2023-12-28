@@ -47,7 +47,7 @@ def run(dataset, config):
             'partition': "thin",
             'cores': 8,
             'memory': "32 GB",
-            'walltime': "01:00:00",
+            'walltime': config.max_runtime_seconds,
         }
     else:
         type_task = 'regression'
@@ -57,7 +57,7 @@ def run(dataset, config):
             'partition': "thin",
             'cores': 8,
             'memory': "32 GB",
-            'walltime': "01:00:00",
+            'walltime': config.max_runtime_seconds,
         }
         
     
