@@ -21,13 +21,19 @@ from frameworks.shared.utils import Timer
 
 ###
 
-import openai
-from AMLTK_from_portoflio import AMLTK_v1
+from openai import OpenAI
+from AMLTK_from_portoflio import AMLTK_llm
 
 ###
 
 log = logging.getLogger(__name__)
 
+os.environ['OPENAI_API_KEY'] = ' '
+
+# Get the API key from the environment variable
+api_key = os.getenv('OPENAI_API_KEY')
+# Use the API key to create a client
+client = OpenAI(api_key=api_key)
 
 def run(dataset, config):
     log.info("\n**** LLM AutoML ****")
@@ -62,7 +68,7 @@ def run(dataset, config):
         
     
     
-    automl = AMLTK_v1(**kwargs)
+    automl = AMLTK_llm(**kwargs)
     with Timer() as training_timer:
         automl.fit(X_train, y_train)
     log.info(f"Finished fit in {training_timer.duration}s.")
