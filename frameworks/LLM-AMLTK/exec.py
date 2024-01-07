@@ -54,6 +54,7 @@ def run(dataset, config):
             'cores': 8,
             'memory': "32 GB",
             'walltime': config.max_runtime_seconds,
+            'enhance': True,
         }
     else:
         type_task = 'regression'
@@ -64,6 +65,7 @@ def run(dataset, config):
             'cores': 8,
             'memory': "32 GB",
             'walltime': config.max_runtime_seconds,
+            'enhance': True,
         }
         
     
