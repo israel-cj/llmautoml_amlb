@@ -50,8 +50,8 @@ def run(dataset, config):
         kwargs = {
             'task': type_task,
             'N_WORKERS': 32,
-            'partition': "thin",
-            'cores': 8,
+            'partition': "genoa",
+            'cores': 2,
             'memory': "32 GB",
             'walltime': config.max_runtime_seconds,
             'enhance': True,
@@ -61,8 +61,8 @@ def run(dataset, config):
         kwargs = {
             'task': type_task,
             'N_WORKERS': 32,
-            'partition': "thin",
-            'cores': 8,
+            'partition': "genoa",
+            'cores': 2,
             'memory': "32 GB",
             'walltime': config.max_runtime_seconds,
             'enhance': True,
