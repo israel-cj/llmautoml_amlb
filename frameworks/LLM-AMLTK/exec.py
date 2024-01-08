@@ -49,7 +49,7 @@ def run(dataset, config):
         type_task = 'classification'
         kwargs = {
             'task': type_task,
-            'N_WORKERS': 32,
+            'N_WORKERS': 2,
             'partition': "genoa",
             'cores': 2,
             'memory': "32 GB",
@@ -60,7 +60,7 @@ def run(dataset, config):
         type_task = 'regression'
         kwargs = {
             'task': type_task,
-            'N_WORKERS': 32,
+            'N_WORKERS': 2,
             'partition': "genoa",
             'cores': 2,
             'memory': "32 GB",
