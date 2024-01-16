@@ -54,7 +54,7 @@ def run(dataset, config):
             'cores': 2,
             'memory': "32 GB",
             'walltime': config.max_runtime_seconds,
-            'enhance': False,
+            'enhance': True,
         }
     else:
         type_task = 'regression'
@@ -65,7 +65,7 @@ def run(dataset, config):
             'cores': 2,
             'memory': "32 GB",
             'walltime': config.max_runtime_seconds,
-            'enhance': False,
+            'enhance': True,
         }
 
     automl = AMLTK_llm(**kwargs)
