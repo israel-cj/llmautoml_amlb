@@ -63,7 +63,7 @@ def run(dataset, config):
     
     automl = PP_LLM(**kwargs)
     with Timer() as training_timer:
-        automl.fit(X_train, y_train)
+        automl.fit(X_train, y_train[y_train.columns[0]])
     log.info(f"Finished fit in {training_timer.duration}s.")
 
     log.info('Predicting on the test set.')
