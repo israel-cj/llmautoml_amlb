@@ -201,6 +201,13 @@ oboe:
 #    selection_method: random
 #    verbose: true
 
+PP_LLM:
+  project: https://github.com/israel-cj/pp_llm.git
+  version: "stable"
+  description: |
+    This project is based on utilizing two versions of GPT 3.5 that have been fine-tuned to create an ensemble model for a given dataset. 
+
+
 TPOT:
   version: 'stable'
   description: |

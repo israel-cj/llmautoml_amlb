@@ -1,0 +1,6 @@
+openai
+openml
+scikit-learn
+stopit
+ipython
+mlxtend

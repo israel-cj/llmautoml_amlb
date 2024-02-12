@@ -89,6 +89,9 @@ NaiveAutoML:
 oboe:
   version: 'latest'
 
+PP_LLM:
+  version: "latest"
+
 TPOT:
   version: 'latest'
 

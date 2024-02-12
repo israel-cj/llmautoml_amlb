@@ -94,6 +94,9 @@ NaiveAutoML:
 oboe:
   version: 'stable'
 
+PP_LLM:
+  version: "stable"
+
 TPOT:
   version: 'stable'
 
